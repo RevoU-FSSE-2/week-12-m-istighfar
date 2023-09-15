@@ -1,127 +1,127 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
 }
 
 .card-with-sider {
-  max-width: 1000px;
-  background-color: #fff;
-  color: #333;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 16px;
-  padding: 16px;
-  border-radius: 8px;
-  overflow: hidden;
+    max-width: 1000px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .ant-card-head-title {
-  font-weight: bold;
-  text-align: center;
+    font-weight: bold;
+    text-align: center;
 }
 
 .form-content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .sider {
-  background-color: #fff !important;
-  padding: 16px;
+    background-color: #fff !important;
+    padding: 16px;
 
-  min-width: 200px;
+    min-width: 200px;
 }
 
 .menu {
-  width: 100%;
+    width: 100%;
 }
 
 .content {
-  flex-grow: 1;
-  padding: 16px;
-  background-color: #fff;
-  overflow: auto;
+    flex-grow: 1;
+    padding: 16px;
+    background-color: #fff;
+    overflow: auto;
 }
 
 .steps {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .form-section {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .form-field {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 label {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .error {
-  color: red;
+    color: red;
 }
 
 .form-controls {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
 }
 
 .next-button,
 .back-button,
 .register-button {
-  width: 25%;
+    width: 25%;
 }
 
 .next-button:hover,
 .back-button:hover,
 .register-button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 @media (max-width: 768px) {
-  .sider {
-    display: none;
-  }
+    .sider {
+        display: none;
+    }
 
-  .menu {
-    display: none;
-  }
+    .menu {
+        display: none;
+    }
 
-  .steps {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
-    align-items: center;
-  }
+    .steps {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        align-items: center;
+    }
 
-  .form-controls {
-    flex-direction: column;
-  }
+    .form-controls {
+        flex-direction: column;
+    }
 
-  .next-button,
-  .back-button,
-  .register-button {
-    width: 100%;
-    margin-top: 8px;
-  }
+    .next-button,
+    .back-button,
+    .register-button {
+        width: 100%;
+        margin-top: 8px;
+    }
 
-  label {
-    font-size: 16px;
-  }
+    label {
+        font-size: 16px;
+    }
 
-  .error {
-    font-size: 14px;
-  }
+    .error {
+        font-size: 14px;
+    }
 }
