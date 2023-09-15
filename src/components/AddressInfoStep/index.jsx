@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import { Input, Button } from "antd";
 
 const AddressInfoStep = ({ formik, handleBackClick }) => {
@@ -11,8 +10,9 @@ const AddressInfoStep = ({ formik, handleBackClick }) => {
           name="streetAddress"
           value={formik.values.streetAddress}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
-        {formik.errors.streetAddress && (
+        {formik.touched.streetAddress && formik.errors.streetAddress && (
           <div className="error">{formik.errors.streetAddress}</div>
         )}
       </div>
@@ -22,8 +22,9 @@ const AddressInfoStep = ({ formik, handleBackClick }) => {
           name="city"
           value={formik.values.city}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
-        {formik.errors.city && (
+        {formik.touched.city && formik.errors.city && (
           <div className="error">{formik.errors.city}</div>
         )}
       </div>
@@ -33,8 +34,9 @@ const AddressInfoStep = ({ formik, handleBackClick }) => {
           name="state"
           value={formik.values.state}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
-        {formik.errors.state && (
+        {formik.touched.state && formik.errors.state && (
           <div className="error">{formik.errors.state}</div>
         )}
       </div>
@@ -44,8 +46,9 @@ const AddressInfoStep = ({ formik, handleBackClick }) => {
           name="zipCode"
           value={formik.values.zipCode}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
-        {formik.errors.zipCode && (
+        {formik.touched.zipCode && formik.errors.zipCode && (
           <div className="error">{formik.errors.zipCode}</div>
         )}
       </div>

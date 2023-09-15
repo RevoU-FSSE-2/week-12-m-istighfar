@@ -10,8 +10,9 @@ const AccountInfoStep = ({ formik, handleBackClick }) => {
           name="username"
           value={formik.values.username}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
-        {formik.errors.username && (
+        {formik.touched.username && formik.errors.username && (
           <div className="error">{formik.errors.username}</div>
         )}
       </div>
@@ -21,8 +22,9 @@ const AccountInfoStep = ({ formik, handleBackClick }) => {
           name="password"
           value={formik.values.password}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
-        {formik.errors.password && (
+        {formik.touched.password && formik.errors.password && (
           <div className="error">{formik.errors.password}</div>
         )}
       </div>

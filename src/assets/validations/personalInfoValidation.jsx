@@ -1,6 +1,6 @@
 import * as yup from "yup";
 
-const personalInfoValidationSchema = yup.object({
+const personalInfoValidationSchema = yup.object().shape({
   fullName: yup.string().required("Full name is required"),
   email: yup
     .string()

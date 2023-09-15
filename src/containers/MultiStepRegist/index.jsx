@@ -39,6 +39,8 @@ const MultiStepRegist = () => {
       password: "",
     },
     validationSchema: validationSchemas[currentStep],
+    validateOnChange: true,
+    validateOnBlur: true,
     onSubmit: async (values) => {
       const errors = await formik.validateForm();
 
