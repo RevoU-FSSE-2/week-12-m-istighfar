@@ -13,6 +13,7 @@
 7. [Usage](#usage)
 8. [Contributing](#contributing)
 
+
 ## Description
 
 In this assignment, we are tasked with building a React application using React Vite, showcasing proficiency in using various technologies including Ant Design, Formik, Yup validation, and advanced styling techniques. The core of this application is a multi-step registration form with robust validation at each step.
