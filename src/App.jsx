@@ -1,4 +1,4 @@
-import MultiStepRegist from './containers/MultiStepRegist';
+import { MultiStepRegist } from './layout';
 
 function App() {
     return (
