@@ -1,61 +1,60 @@
-#  Multi-Step Registration Form
+# Multi-step Registration Form
 
 ## Description
-In this assignment, you will build a React application that showcases your proficiency in using React Vite, `useState`, Ant Design, advanced styling techniques, Formik, and Yup validation. Your task is to create a multi-step registration form with client-side validation and a user-friendly interface.
 
-## Deliverables
+In this assignment, we are tasked with building a React application using React Vite, showcasing proficiency in using various technologies including Ant Design, Formik, Yup validation, and advanced styling techniques. The core of this application is a multi-step registration form with robust validation at each step.
 
-### 1. Multi-Step Registration Form
+## Features
 
-#### Step 1: Personal Information
-- **Full Name:** Required field
-- **Email Address:** Required field; must follow a valid email format
-- **Date of Birth:** Required field; includes age validation
+- Multi-step registration form with three stages: personal information, address information, and account creation
+- Client-side validation using Formik and Yup
+- Usage of Ant Design components for a polished UI
+- Progress indicator showcasing the current step and overall progress through the form
 
-#### Step 2: Address Information
-- **Street Address:** Required field
-- **City:** Required field
-- **State:** Required field
-- **Zip Code:** Required field; must follow a valid format
+## Technology Stack
 
-#### Step 3: Account Information
-- **Username:** Required field; must be unique
-- **Password:** Required field; must pass strong password validation
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Ant Design](https://ant.design/)
+- [Formik](https://formik.org/)
+- [Yup](https://github.com/jquense/yup)
 
-### 2. Ant Design Integration
-Utilize Ant Design components to build and style your form, ensuring a modern and user-friendly interface.
+## Getting Started
 
-### 3. Formik and Yup Validation
-Implement client-side validation using Formik and Yup, with proper error messages displayed for invalid inputs.
+### Prerequisites
 
-### 4. React Component for Multi-Step Form
-Create a React component for the multi-step form using `useState` to manage the form's state and to control navigation between the different steps.
+Ensure that you have the following installed on your system:
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-### 5. Navigation
-Implement a side navigation menu that allows users to understand and control their progress through the form's various steps.
+### Installation
 
-### 6. Progress Indicator
-Display a progress indicator at the top of the form to visually represent the user's current step and overall progress through the form.
-
-## Setup
-
-To get started with the project locally, follow these instructions:
-
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Install the necessary packages using the following command:
+1. Clone the repository
+   ```sh
+   git clone 
    ```
+2. Navigate to the project directory
+   ```sh
+   cd 
+   ```
+3. Install the dependencies
+   ```sh
    npm install
    ```
-4. Start the development server using the following command:
-   ```
-   npm start
-   ```
-5. Open your web browser and visit `http://localhost:5173` to view the application.
+
+### Development
+
+To start the development server, run:
+```sh
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:5173) to view the project in your browser.
+
+## Usage
+
+The application showcases a multi-step form that collects various information from the user. At each step, users can navigate to the previous steps to make any corrections. The form leverages Ant Design components for inputs, layout, and styling, ensuring a user-friendly experience.
 
 ## Contributing
-To contribute to this project, create a fork of the repository, make your changes and then submit a pull request.
 
-## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-```
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
