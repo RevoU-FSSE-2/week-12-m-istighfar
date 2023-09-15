@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import { useState } from "react";
-import { Card, Menu, Steps } from "antd";
+import { Card, Menu, Steps, Modal } from "antd";
 import { useFormik } from "formik";
 import "./MultiStepRegist.css";
 import {
@@ -25,6 +25,7 @@ const validationSchemas = [
 const MultiStepRegist = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [validSteps, setValidSteps] = useState([true, false, false]);
+
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -39,19 +40,20 @@ const MultiStepRegist = () => {
     },
     validationSchema: validationSchemas[currentStep],
     onSubmit: async (values) => {
-      // Validate the form for the current step
       const errors = await formik.validateForm();
 
-      // Check if there are no errors before proceeding
       if (Object.keys(errors).length === 0) {
-        // If we're on the last step, handle form submission
         if (currentStep >= 2) {
           console.log("Registration data:", values);
-          // Handle registration submission here, e.g., sending data to the server
+          Modal.success({
+            title: "Registration Successful",
+            content: "Congratulations! You have successfully registered.",
+            onOk: handleModalOk,
+          });
+
           return;
         }
 
-        // If we're not on the last step, go to the next step
         setCurrentStep((prevStep) => prevStep + 1);
         setValidSteps((prevValidSteps) => {
           const newValidSteps = [...prevValidSteps];
@@ -72,6 +74,12 @@ const MultiStepRegist = () => {
     if (validSteps[step]) {
       setCurrentStep(step);
     }
+  };
+
+  const handleModalOk = () => {
+    formik.resetForm();
+
+    setCurrentStep(0);
   };
 
   const stepComponents = [
