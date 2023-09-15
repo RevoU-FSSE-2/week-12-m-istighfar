@@ -1,0 +1,139 @@
+/* Global styles for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the entire form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5; /* Light blue background color */
+}
+
+/* Card styling */
+.card-with-sider {
+  max-width: 1000px;
+  background-color: #fff; /* White background color for the card */
+  color: #333; /* Dark text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for the card */
+  margin: 16px; /* Add margin for centering the card */
+  padding: 16px; /* Add padding for spacing inside the card */
+  border-radius: 8px; /* Rounded corners for the card */
+  overflow: hidden;
+}
+
+/* Title styling for the card header */
+.ant-card-head-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Sider styling */
+.form-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sider {
+  background-color: #fff !important; /* White background color for the sider */
+  padding: 16px;
+  /* border-right: 1px solid #ddd; */
+  min-width: 200px; /* Adjust the minimum width of the sider */
+}
+
+.menu {
+  width: 100%;
+}
+
+.content {
+  flex-grow: 1; /* Allow content to grow to fill available space */
+  padding: 16px;
+  background-color: #fff; /* White background color for the content area */
+  overflow: auto;
+}
+
+/* Steps styling */
+.steps {
+  margin-bottom: 16px;
+}
+
+/* Form section styling */
+.form-section {
+  margin-bottom: 16px;
+}
+
+/* Form field styling */
+.form-field {
+  margin-bottom: 16px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+}
+
+/* Form controls styling */
+.form-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+/* Button styling */
+.next-button,
+.back-button,
+.register-button {
+  width: 25%;
+}
+
+.next-button:hover,
+.back-button:hover,
+.register-button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Add media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .sider {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .steps {
+    display: flex; /* Display the progress steps in a row */
+    justify-content: space-between; /* Space them evenly */
+    margin-bottom: 16px;
+    align-items: center;
+  }
+
+  .form-controls {
+    flex-direction: column; /* Stack form controls vertically */
+  }
+
+  .next-button,
+  .back-button,
+  .register-button {
+    width: 100%; /* Make the buttons full width on smaller screens */
+    margin-top: 8px; /* Add some space between the buttons */
+  }
+
+  /* Adjust font size for smaller screens */
+  label {
+    font-size: 16px; /* Adjust the font size */
+  }
+
+  .error {
+    font-size: 14px; /* Adjust the font size */
+  }
+}
