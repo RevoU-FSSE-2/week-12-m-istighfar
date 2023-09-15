@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-// StepHeader.js
+
 import { Steps } from 'antd';
 
 const { Step } = Steps;

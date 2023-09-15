@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-// StepMenu.js
+
 import { Menu } from 'antd';
 
 const StepMenu = ({ titles, currentStep, validSteps, handleMenuClick }) => {

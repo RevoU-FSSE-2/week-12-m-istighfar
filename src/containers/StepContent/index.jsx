@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// StepContent.js
 import { PersonalInfoStep, AddressInfoStep, AccountInfoStep } from '../../components';
 
 const StepContent = ({ currentStep, formik, handleBackClick }) => {

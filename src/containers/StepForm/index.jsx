@@ -1,4 +1,3 @@
-// StepForm.js
 import { useFormik } from 'formik';
 
 const StepForm = ({ currentStep, validationSchemas, initialValues, onSubmit }) => {
