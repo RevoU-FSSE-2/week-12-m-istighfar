@@ -1,4 +1,3 @@
-import "./App.css";
 import MultiStepRegist from "./containers/MultiStepRegist";
 
 function App() {

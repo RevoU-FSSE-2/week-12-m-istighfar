@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
+
 import { Input, Button } from "antd";
 
-// eslint-disable-next-line react/prop-types
 const AddressInfoStep = ({ formik, handleBackClick }) => {
   return (
     <div className="form-section">
